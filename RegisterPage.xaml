@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PROIECT.RegisterPage"
+             Title="Înregistrare Locatar"
+             BackgroundColor="{StaticResource Secondary}">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center">
+
+            <Image Source="info_icon.png" HeightRequest="80" />
+
+            <Label Text="Creare Cont Nou" 
+                   FontSize="24" FontAttributes="Bold" 
+                   HorizontalOptions="Center" TextColor="{StaticResource Primary}"/>
+
+            <Entry x:Name="numeEntry" Placeholder="Nume Complet" TextColor="Black" PlaceholderColor="Gray"/>
+            <Entry x:Name="emailEntry" Placeholder="Adresă Email" Keyboard="Email" TextColor="Black" PlaceholderColor="Gray"/>
+            <Entry x:Name="passwordEntry" Placeholder="Parolă" IsPassword="True" TextColor="Black" PlaceholderColor="Gray"/>
+            <Entry x:Name="confirmPasswordEntry" Placeholder="Confirmă Parola" IsPassword="True" TextColor="Black" PlaceholderColor="Gray"/>
+
+            <Label Text="Selectează Apartamentul tău:" TextColor="Black" FontAttributes="Bold"/>
+            <Picker x:Name="apartamentPicker" 
+                    Title="Alege din listă" 
+                    TitleColor="Gray"
+                    TextColor="Black"
+                    BackgroundColor="White"/>
+
+          
+
+            <Button Text="Creează Cont" 
+                    Clicked="OnRegisterClicked" 
+                    BackgroundColor="{StaticResource Primary}" 
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="50"/>
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10" Margin="0,10,0,10">
+                <CheckBox x:Name="adminCheckBox" Color="{StaticResource Primary}"/>
+                <Label Text="Sunt Administrator" VerticalOptions="Center" TextColor="Black"/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PROIECT.SesizariPage"
+             Title="Avizier Sesizări">
+
+    <Grid RowDefinitions="*, Auto" Padding="20">
+
+        <ListView x:Name="listView" 
+                  Grid.Row="0"
+                  HasUnevenRows="True"
+                  SelectionMode="None"
+                  SeparatorColor="Gray">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10" ColumnDefinitions="*, Auto">
+
+                            <VerticalStackLayout Grid.Column="0" Spacing="2">
+                                <Label Text="{Binding Subiect}" 
+                                       FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+
+                                <Label Text="{Binding Descriere}" 
+                                       TextColor="Gray" FontSize="14"/>
+
+                                <Label Text="{Binding NumeAutor, StringFormat='Scris de: {0}'}" 
+                                       TextColor="{StaticResource Primary}" FontSize="12"/>
+                            </VerticalStackLayout>
+
+                            <Button Text="Rezolvat"
+                                    Grid.Column="1"
+                                    Clicked="OnStergeClicked"
+                                    CommandParameter="{Binding .}"
+                                    IsVisible="{Binding EsteAdmin}"
+                                    BackgroundColor="Red"
+                                    TextColor="White"
+                                    HeightRequest="40"
+                                    FontSize="12"
+                                    VerticalOptions="Center"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="Adaugă Sesizare Nouă"
+                Grid.Row="1"
+                Clicked="OnAddClicked"
+                BackgroundColor="{StaticResource Primary}"
+                TextColor="White"
+                CornerRadius="10"
+                Margin="0,10,0,0"/>
+    </Grid>
+</ContentPage>
