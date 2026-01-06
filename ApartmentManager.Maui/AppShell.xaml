@@ -5,40 +5,75 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ApartmentManager.Maui"
-    Shell.FlyoutBehavior="Disabled"
+    xmlns:shared="clr-namespace:ApartmentManager.Shared;assembly=ApartmentManager.Shared"
+    FlyoutBehavior="Disabled"
     Title="Apartment Manager">
-
 
     <TabBar>
         <ShellContent
             Title="Apartamente"
-            Icon="apartament_icon.png"
             ContentTemplate="{DataTemplate local:ApartamentPage}"
-            Route="ApartamentPage" />
+            Route="ApartamentPage">
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="FAsolid"
+                    Glyph="{x:Static shared:FontAwesome+Solid.Building}"
+                    Size="20"
+                    Color="{AppThemeBinding Light=#512BD4, Dark=White}" />
+            </ShellContent.Icon>
+        </ShellContent>
 
         <ShellContent
             Title="Facturi"
-            Icon="factura_icon.png"
             ContentTemplate="{DataTemplate local:FacturaPage}"
-            Route="FacturaPage" />
+            Route="FacturaPage">
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="FAsolid"
+                    Glyph="{x:Static shared:FontAwesome+Solid.FileInvoiceDollar}"
+                    Size="20"
+                    Color="{AppThemeBinding Light=#512BD4, Dark=White}" />
+            </ShellContent.Icon>
+        </ShellContent>
 
         <ShellContent
             Title="Sesizări"
-            Icon="sesizare_icon.png"
             ContentTemplate="{DataTemplate local:SesizariPage}"
-            Route="SesizarePage" />
+            Route="SesizarePage">
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="FAsolid"
+                    Glyph="{x:Static shared:FontAwesome+Solid.Flag}"
+                    Size="20"
+                    Color="{AppThemeBinding Light=#512BD4, Dark=White}" />
+            </ShellContent.Icon>
+        </ShellContent>
 
         <ShellContent
             Title="Despre"
-            Icon="info_icon.png"
             ContentTemplate="{DataTemplate local:AboutPage}"
-            Route="AboutPage" />
+            Route="AboutPage">
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="FAsolid"
+                    Glyph="{x:Static shared:FontAwesome+Solid.CircleInfo}"
+                    Size="20"
+                    Color="{AppThemeBinding Light=#512BD4, Dark=White}" />
+            </ShellContent.Icon>
+        </ShellContent>
+
         <ShellContent
             Title="Deconectare"
-            Icon="logout_icon.png"
             ContentTemplate="{DataTemplate local:LogoutPage}"
-            Route="LogoutPage" />
-
+            Route="LogoutPage">
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="FAsolid"
+                    Glyph="{x:Static shared:FontAwesome+Solid.RightFromBracket}"
+                    Size="20"
+                    Color="{AppThemeBinding Light=#512BD4, Dark=White}" />
+            </ShellContent.Icon>
+        </ShellContent>
     </TabBar>
 
 </Shell>

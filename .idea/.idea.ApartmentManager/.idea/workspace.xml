@@ -19,7 +19,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b091f05e-3ccd-4629-a09c-55ed0f79d192" name="Changes" comment="" />
+    <list default="true" id="b091f05e-3ccd-4629-a09c-55ed0f79d192" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ApartmentManager.Shared/FontAwesome.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/AppShell.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/AppShell.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/MauiProgram.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/MauiProgram.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Tizen/Main.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/iOS/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApartmentManager.Shared/FontAwesome.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -125,7 +131,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Android.ApartmentManager.Maui">
+  <component name="RunManager" selected="iOS.ApartmentManager.Maui">
     <configuration name="ApartmentManager.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ApartmentManager.API/ApartmentManager.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net10.0" />
@@ -274,7 +280,7 @@
       <workItem from="1767673012984" duration="423000" />
       <workItem from="1767673458427" duration="1988000" />
       <workItem from="1767675868431" duration="600000" />
-      <workItem from="1767676733170" duration="3272000" />
+      <workItem from="1767676733170" duration="3657000" />
     </task>
     <task id="LOCAL-00001" summary="fix: platform files">
       <option name="closed" value="true" />
@@ -300,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767679987171</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="chore: update runtime configurations">
+      <option name="closed" value="true" />
+      <created>1767680123997</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1767680123997</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +327,8 @@
     <MESSAGE value="fix: platform files" />
     <MESSAGE value="chore: update plists" />
     <MESSAGE value="chore: rename variable to match naming scheme" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: rename variable to match naming scheme" />
+    <MESSAGE value="chore: update runtime configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update runtime configurations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
