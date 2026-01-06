@@ -1,0 +1,50 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Facturi";
+}
+
+<h1>Facturi</h1>
+
+@if (User.IsInRole("Admin"))
+{
+    <p>
+        <a asp-page="Create" class="btn btn-primary">Adaugă Nouă</a>
+    </p>
+}
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Apartament</th>
+        <th>Luna</th>
+        <th>Sumă</th>
+        <th>Status</th>
+        <th>Tip</th>
+        @if (User.IsInRole("Admin"))
+        {
+            <th>Acțiuni</th>
+        }
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Facturi)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.NumeApartament</td>
+            <td>@item.Luna</td>
+            <td>@item.SumaDePlata</td>
+            <td>@item.Status</td>
+            <td>@item.Tip</td>
+            @if (User.IsInRole("Admin"))
+            {
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.ID">Editare</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.ID">Ștergere</a>
+                </td>
+            }
+        </tr>
+    }
+    </tbody>
+</table>

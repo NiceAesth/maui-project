@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ApartmentManager.Maui.LocatarPage"
+             Title="Locatari Apartament">
+    <Grid RowDefinitions="*, Auto" Margin="20">
+        <CollectionView x:Name="listView" Grid.Row="0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10" ColumnDefinitions="*, Auto">
+                        <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+                            <Label Text="{Binding Nume}" FontAttributes="Bold" FontSize="16" />
+                            <Label Text="{Binding Email}" FontSize="12" TextColor="Gray" />
+                        </VerticalStackLayout>
+                        <Button Text="Șterge"
+                                Grid.Column="1"
+                                BackgroundColor="Red"
+                                TextColor="White"
+                                Clicked="OnDeleteLocatarClicked"
+                                CommandParameter="{Binding .}" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="Adaugă Locatar" Grid.Row="1" Clicked="OnLocatarAddedClicked" />
+    </Grid>
+</ContentPage>

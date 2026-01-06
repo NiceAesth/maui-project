@@ -1,0 +1,63 @@
+@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Înregistrare";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <h2 class="text-center">Înregistrare</h2>
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Input.Email" class="control-label"></label>
+                <input asp-for="Input.Email" class="form-control"/>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Input.Password" class="control-label"></label>
+                <input asp-for="Input.Password" class="form-control" type="password"/>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Input.Nume" class="control-label">Nume</label>
+                <input asp-for="Input.Nume" class="form-control"/>
+                <span asp-validation-for="Input.Nume" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Input.Prenume" class="control-label">Prenume</label>
+                <input asp-for="Input.Prenume" class="form-control"/>
+                <span asp-validation-for="Input.Prenume" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Input.ApartamentID" class="control-label">Apartament</label>
+                <select asp-for="Input.ApartamentID" class="form-control" asp-items="Model.ApartamentList">
+                    <option value="">-- Selectați Apartamentul --</option>
+                </select>
+                <span asp-validation-for="Input.ApartamentID" class="text-danger"></span>
+            </div>
+
+            <div class="form-group text-center">
+                <input type="submit" value="Înregistrare" class="btn btn-primary"/>
+            </div>
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="alert alert-danger mt-3">@Model.ErrorMessage</div>
+            }
+
+            <div class="text-center mt-3">
+                <p>Aveți deja cont? <a asp-page="/Auth/Login">Autentificare</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

@@ -1,0 +1,48 @@
+@page
+@model CreateModel
+@{
+    ViewData["Title"] = "Adaugă Locatar";
+}
+
+<h1>Adaugă Locatar</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label class="control-label">Parolă Implicită</label>
+                <input class="form-control" value="Default123!" disabled/>
+                <small class="text-muted">Locatarii pot schimba această parolă după prima autentificare.</small>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Locatar.ApartamentID" class="control-label">Apartament</label>
+                <select asp-for="Locatar.ApartamentID" class="form-control" asp-items="Model.ApartamentList"></select>
+                <span asp-validation-for="Locatar.ApartamentID" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Locatar.Nume" class="control-label"></label>
+                <input asp-for="Locatar.Nume" class="form-control"/>
+                <span asp-validation-for="Locatar.Nume" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Locatar.Prenume" class="control-label"></label>
+                <input asp-for="Locatar.Prenume" class="form-control"/>
+                <span asp-validation-for="Locatar.Prenume" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Locatar.Email" class="control-label"></label>
+                <input asp-for="Locatar.Email" class="form-control"/>
+                <span asp-validation-for="Locatar.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Adaugă" class="btn btn-primary"/>
+                <a asp-page="Index" class="btn btn-secondary">Înapoi la Listă</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

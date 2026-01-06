@@ -1,0 +1,107 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bine ați venit la Apartment Manager</h1>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <p class="lead">Bună, @(User.Identity?.Name ?? "Utilizator")!</p>
+
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h2>Panou Administrare</h2>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@Model.TotalApartments</h5>
+                            <p class="card-text">Apartamente</p>
+                            <a asp-page="/Apartments/Index" class="btn btn-sm btn-primary">Vezi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@Model.TotalTenants</h5>
+                            <p class="card-text">Locatari</p>
+                            <a asp-page="/Locatari/Index" class="btn btn-sm btn-primary">Vezi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@Model.TotalInvoices</h5>
+                            <p class="card-text">Facturi</p>
+                            <a asp-page="/Facturi/Index" class="btn btn-sm btn-primary">Vezi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@Model.TotalRequests</h5>
+                            <p class="card-text">Sesizări</p>
+                            <a asp-page="/Sesizari/Index" class="btn btn-sm btn-primary">Vezi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@Model.TotalExpenses</h5>
+                            <p class="card-text">Cheltuieli</p>
+                            <a asp-page="/Cheltuieli/Index" class="btn btn-sm btn-primary">Vezi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h2>Panou Locatar</h2>
+                    <p>Vizualizați facturile și trimiteți sesizări.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Facturile Mele</h5>
+                            <p class="card-text">Vizualizați și gestionați facturile dumneavoastră.</p>
+                            <a asp-page="/Facturi/Index" class="btn btn-primary">Vezi Facturi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Trimite Sesizare</h5>
+                            <p class="card-text">Trimiteți o sesizare pentru mentenanță sau service.</p>
+                            <a asp-page="/Sesizari/Create" class="btn btn-primary">Trimite Sesizare</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p class="lead">Gestionați asociația de proprietari cu ușurință.</p>
+        <div class="mt-4">
+            <a asp-page="/Auth/Login" class="btn btn-primary btn-lg">Autentificare</a>
+            <a asp-page="/Auth/Register" class="btn btn-outline-primary btn-lg">Înregistrare</a>
+        </div>
+    }
+</div>

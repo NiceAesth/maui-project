@@ -1,0 +1,35 @@
+@page
+@model SendModel
+@{
+    ViewData["Title"] = "Trimite Notificare";
+}
+
+<h1>Trimite Notificare</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form method="post">
+            <div class="form-group mb-3">
+                <label asp-for="Notification.UserId" class="control-label">Destinatar (Locatar)</label>
+                <select asp-for="Notification.UserId" class="form-control">
+                    <option value="">-- Toți Locatarii --</option>
+                    @foreach (var locatar in Model.Locatari)
+                    {
+                        <option value="@locatar.ID">@locatar.Nume @locatar.Prenume (@locatar.Email)</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Notification.Title" class="control-label">Titlu</label>
+                <input asp-for="Notification.Title" class="form-control"/>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Notification.Message" class="control-label">Mesaj</label>
+                <textarea asp-for="Notification.Message" class="form-control" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Trimite" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>

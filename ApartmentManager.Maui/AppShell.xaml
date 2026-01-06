@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Shell
+    x:Class="ApartmentManager.Maui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ApartmentManager.Maui"
+    Shell.FlyoutBehavior="Disabled"
+    Title="PROIECT">
+
+
+    <TabBar>
+        <ShellContent
+            Title="Apartamente"
+            Icon="apartament_icon.png"
+            ContentTemplate="{DataTemplate local:ApartamentPage}"
+            Route="ApartamentPage" />
+
+        <ShellContent
+            Title="Facturi"
+            Icon="factura_icon.png"
+            ContentTemplate="{DataTemplate local:FacturaPage}"
+            Route="FacturaPage" />
+
+        <ShellContent
+            Title="Sesizări"
+            Icon="sesizare_icon.png"
+            ContentTemplate="{DataTemplate local:SesizariPage}"
+            Route="SesizarePage" />
+
+        <ShellContent
+            Title="Despre"
+            Icon="info_icon.png"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Route="AboutPage" />
+        <ShellContent
+            Title="Deconectare"
+            Icon="logout_icon.png"
+            ContentTemplate="{DataTemplate local:LogoutPage}"
+            Route="LogoutPage" />
+
+    </TabBar>
+
+</Shell>

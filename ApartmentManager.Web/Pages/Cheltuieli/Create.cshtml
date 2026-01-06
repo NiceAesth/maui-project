@@ -1,0 +1,38 @@
+@page
+@model CreateModel
+@{
+    ViewData["Title"] = "Adaugă Cheltuială";
+}
+
+<h1>Adaugă Cheltuială Asociație</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label asp-for="Cheltuiala.Tip" class="control-label">Tip (Apă/Gaz/Reparații)</label>
+                <input asp-for="Cheltuiala.Tip" class="form-control"/>
+                <span asp-validation-for="Cheltuiala.Tip" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Cheltuiala.SumaTotala" class="control-label"></label>
+                <input asp-for="Cheltuiala.SumaTotala" class="form-control" type="number" step="0.01"/>
+                <span asp-validation-for="Cheltuiala.SumaTotala" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Cheltuiala.DataFactura" class="control-label"></label>
+                <input asp-for="Cheltuiala.DataFactura" class="form-control" type="date"/>
+                <span asp-validation-for="Cheltuiala.DataFactura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Adaugă" class="btn btn-primary"/>
+                <a asp-page="Index" class="btn btn-secondary">Înapoi la Listă</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

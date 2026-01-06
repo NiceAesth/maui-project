@@ -1,0 +1,37 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Locatari";
+}
+
+<h1>Locatari</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Adaugă Nou</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Nume</th>
+        <th>Prenume</th>
+        <th>Email</th>
+        <th>Apartament ID</th>
+        <th>Acțiuni</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Locatari)
+    {
+        <tr>
+            <td>@item.Nume</td>
+            <td>@item.Prenume</td>
+            <td>@item.Email</td>
+            <td>@item.ApartamentID</td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Editare</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Ștergere</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

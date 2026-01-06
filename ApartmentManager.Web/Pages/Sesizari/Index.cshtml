@@ -1,0 +1,58 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Sesizări";
+}
+
+<h1>Sesizări</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Subiect</th>
+        <th>Descriere</th>
+        @if (User.IsInRole("Admin"))
+        {
+            <th>Autor</th>
+        }
+        <th>Status</th>
+        @if (User.IsInRole("Admin"))
+        {
+            <th>Acțiuni</th>
+        }
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Sesizari)
+    {
+        <tr>
+            <td>@item.Subiect</td>
+            <td>@item.Descriere</td>
+            @if (User.IsInRole("Admin"))
+            {
+                <td>@item.NumeAutor</td>
+            }
+            <td>@item.Status</td>
+            @if (User.IsInRole("Admin"))
+            {
+                <td>
+                    <div class="btn-group">
+                        @if (item.Status == "Nou")
+                        {
+                            <form method="post" asp-page-handler="Preia" asp-route-id="@item.ID" class="d-inline">
+                                <button type="submit" class="btn btn-sm btn-primary">Preia</button>
+                            </form>
+                        }
+                        else if (item.Status == "In Procesare")
+                        {
+                            <form method="post" asp-page-handler="Rezolva" asp-route-id="@item.ID" class="d-inline">
+                                <button type="submit" class="btn btn-sm btn-success">Rezolvă</button>
+                            </form>
+                        }
+                    </div>
+                </td>
+            }
+        </tr>
+    }
+    </tbody>
+</table>

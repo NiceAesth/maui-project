@@ -1,0 +1,29 @@
+@page
+@model DeleteModel
+@{
+    ViewData["Title"] = "Șterge Apartament";
+}
+
+<h1>Șterge Apartament</h1>
+
+<h3>Sunteți sigur că doriți să ștergeți acest apartament?</h3>
+<div>
+    <h4>Apartament</h4>
+    <hr/>
+    <dl class="row">
+        <dt class="col-sm-2">ID</dt>
+        <dd class="col-sm-10">@Model.Apartament.ID</dd>
+        <dt class="col-sm-2">Număr</dt>
+        <dd class="col-sm-10">@Model.Apartament.NumarApartament</dd>
+        <dt class="col-sm-2">Etaj</dt>
+        <dd class="col-sm-10">@Model.Apartament.Etaj</dd>
+        <dt class="col-sm-2">Suprafață</dt>
+        <dd class="col-sm-10">@Model.Apartament.Suprafata mp</dd>
+    </dl>
+
+    <form method="post">
+        <input type="hidden" asp-for="Apartament.ID"/>
+        <input type="submit" value="Șterge" class="btn btn-danger"/> |
+        <a asp-page="./Index">Înapoi la Listă</a>
+    </form>
+</div>

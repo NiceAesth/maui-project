@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5366a501-8340-48a8-9f8f-6ff456e1bd28" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AboutPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AboutPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartamentEntryPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartamentEntryPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartamentPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartamentPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppShell.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppShell.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Converters/StatusColorConverter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/AsociatieDatabase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Database.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/IRestService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FacturaEntryPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FacturaEntryPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FacturaPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FacturaPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocatarEntryPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocatarEntryPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocatarPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocatarPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoginPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogoutPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogoutPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MauiProgram.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Apartament.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/CheltuialaAsociatie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/FacturaIndividuala.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Locatar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Sesizare.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROIECT.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROIECT.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/Android/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/Android/MainActivity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/Android/MainApplication.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/Android/Resources/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/MacCatalyst/AppDelegate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/MacCatalyst/Entitlements.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/MacCatalyst/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/MacCatalyst/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/Tizen/Main.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/Tizen/tizen-manifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/Windows/App.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/Windows/App.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/Windows/Package.appxmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/Windows/app.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/iOS/AppDelegate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/iOS/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/iOS/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Platforms/iOS/Resources/PrivacyInfo.xcprivacy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegisterPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegisterPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/AppIcon/appicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/AppIcon/appiconfg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Fonts/OpenSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Fonts/OpenSans-Semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Images/apartament_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Images/factura_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Images/info_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Images/sesizare_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Raw/AboutAssets.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Splash/splash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Styles/Colors.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Styles/Styles.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/RestService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SesizareEntryPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SesizareEntryPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SesizariPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SesizariPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ValidationBehaviour.cs" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="37rXnTjZBNeKAnkaJrys9ThOCpA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5366a501-8340-48a8-9f8f-6ff456e1bd28" name="Changes" comment="" />
+      <created>1767662331591</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767662331591</updated>
+    </task>
+    <servers />
+  </component>
+</project>
