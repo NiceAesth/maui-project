@@ -19,10 +19,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b091f05e-3ccd-4629-a09c-55ed0f79d192" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Services/RestService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Services/RestService.cs" afterDir="false" />
-    </list>
+    <list default="true" id="b091f05e-3ccd-4629-a09c-55ed0f79d192" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +125,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.ApartmentManager.Web: http">
+  <component name="RunManager" selected="Android.ApartmentManager.Maui">
     <configuration name="ApartmentManager.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ApartmentManager.API/ApartmentManager.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net10.0" />
@@ -191,6 +188,7 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="ApartmentManager.API: http" run_configuration_type="LaunchSettings" />
       </method>
     </configuration>
     <configuration name="ApartmentManager.Web: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -207,6 +205,7 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="ApartmentManager.API: http" run_configuration_type="LaunchSettings" />
       </method>
     </configuration>
     <configuration name="ApartmentManager.Maui" type="UwpProject" factoryName="UWP">
@@ -221,7 +220,9 @@
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
-      <method v="2" />
+      <method v="2">
+        <option name="Build" projectName="Selected project" />
+      </method>
     </configuration>
     <configuration name="ApartmentManager.Maui" type="XamarinIOSProject" factoryName="Xamarin.iOS">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/ApartmentManager.Maui/ApartmentManager.Maui.csproj" />
@@ -229,7 +230,10 @@
       <option name="IS_PASS_PARENT_ENVS" value="false" />
       <option name="EXTRA_MLAUNCH_PARAMETERS" value="" />
       <option name="PLATFORM_TYPE" value="IOS" />
-      <method v="2" />
+      <method v="2">
+        <option name="Build" projectName="Selected project" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="ApartmentManager.API: http" run_configuration_type="LaunchSettings" />
+      </method>
     </configuration>
     <configuration name="ApartmentManager.Maui" type="XamarinMacProject" factoryName="Xamarin.Mac">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/ApartmentManager.Maui/ApartmentManager.Maui.csproj" />
@@ -238,6 +242,7 @@
       <option name="PASS_PARENT_ENVS_MAC" value="1" />
       <method v="2">
         <option name="Build" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="ApartmentManager.API: http" run_configuration_type="LaunchSettings" />
       </method>
     </configuration>
     <list>
@@ -269,7 +274,7 @@
       <workItem from="1767673012984" duration="423000" />
       <workItem from="1767673458427" duration="1988000" />
       <workItem from="1767675868431" duration="600000" />
-      <workItem from="1767676733170" duration="2967000" />
+      <workItem from="1767676733170" duration="3272000" />
     </task>
     <task id="LOCAL-00001" summary="fix: platform files">
       <option name="closed" value="true" />
@@ -287,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767678250710</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore: rename variable to match naming scheme">
+      <option name="closed" value="true" />
+      <created>1767679987171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767679987171</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +312,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="fix: platform files" />
     <MESSAGE value="chore: update plists" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update plists" />
+    <MESSAGE value="chore: rename variable to match naming scheme" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: rename variable to match naming scheme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
