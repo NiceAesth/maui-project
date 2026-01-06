@@ -20,19 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b091f05e-3ccd-4629-a09c-55ed0f79d192" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/AndroidProjectSystem.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/ApartmentManager.Maui.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/ApartmentManager.Maui.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/AppShell.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/AppShell.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Android/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/App.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Tizen/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Tizen/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Tizen/tizen-manifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Tizen/tizen-manifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Windows/app.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Windows/app.manifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/iOS/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/iOS/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/iOS/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/iOS/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +52,10 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../BaciuAndreiLab7/BaciuAndreiLab7/ProductPage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Android/MainActivity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Android/MainApplication.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/AppDelegate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Tizen/Main.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/iOS/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -68,6 +63,26 @@
     <ignored-facets>
       <facet id="ApartmentManager.Maui/invalid/Android Facet - ApartmentManager.Maui" />
     </ignored-facets>
+  </component>
+  <component name="McpProjectServerCommands">
+    <McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="" />
+      <option name="programPath" value="" />
+      <option name="arguments" value="" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
+    <McpServerCommand sourceId="UserConfigurationSource">
+      <option name="allowedToolsNames" />
+      <option name="enabled" value="true" />
+      <option name="name" value="" />
+      <option name="programPath" value="" />
+      <option name="arguments" value="" />
+      <option name="workingDirectory" value="" />
+      <envs />
+    </McpServerCommand>
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -85,16 +100,18 @@
   "keyToString": {
     ".NET Launch Settings Profile.ApartmentManager.API: http.executor": "Run",
     ".NET Launch Settings Profile.ApartmentManager.Maui: Windows Machine.executor": "Run",
-    ".NET Launch Settings Profile.ApartmentManager.Web: http.executor": "Debug",
+    ".NET Launch Settings Profile.ApartmentManager.Web: http.executor": "Run",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Android.ApartmentManager.Maui.executor": "Run",
+    "Android.ApartmentManager.Maui.executor": "Debug",
     "Device#class com.jetbrains.rider.run.multiPlatform.ios.devices.IOSConnectedDeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider#iOS: ApartmentManager.Maui": "Baciu Andrei’s iPhone",
     "DeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider": "Device",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.android.tools.idea.streaming.zoom.toolbar.visible": "false",
     "do_not_show_solution_notification": "true",
     "git-widget-placeholder": "master",
     "iOS.ApartmentManager.Maui.executor": "Run",
@@ -114,7 +131,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="macOS.ApartmentManager.Maui">
+  <component name="RunManager" selected="iOS.ApartmentManager.Maui">
     <configuration name="ApartmentManager.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ApartmentManager.API/ApartmentManager.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net10.0" />
@@ -207,9 +224,7 @@
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
-      <method v="2">
-        <option name="Build" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="ApartmentManager.Maui" type="XamarinIOSProject" factoryName="Xamarin.iOS">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/ApartmentManager.Maui/ApartmentManager.Maui.csproj" />
@@ -255,8 +270,19 @@
       <workItem from="1767670582637" duration="34000" />
       <workItem from="1767671440211" duration="1255000" />
       <workItem from="1767673012984" duration="423000" />
-      <workItem from="1767673458427" duration="1201000" />
+      <workItem from="1767673458427" duration="1988000" />
+      <workItem from="1767675868431" duration="600000" />
+      <workItem from="1767676733170" duration="1457000" />
     </task>
+    <task id="LOCAL-00001" summary="fix: platform files">
+      <option name="closed" value="true" />
+      <created>1767674683904</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1767674683904</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +292,8 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="fix: platform files" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: platform files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

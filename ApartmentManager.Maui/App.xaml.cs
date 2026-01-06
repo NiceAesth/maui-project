@@ -1,24 +1,22 @@
 ﻿using ApartmentManager.Maui.Services;
-using Plugin.LocalNotification;
 
 namespace ApartmentManager.Maui;
 
-public partial class App : Application
+public partial class App
 {
-    private static RestService? restService;
-    private static NotificationClientService? notificationService;
-
     public App()
     {
         InitializeComponent();
+    }
 
+    protected override Window CreateWindow(IActivationState? activationState)
+    {
         var loggedEmail = Preferences.Get("LoggedUserEmail", "");
+        Page rootPage;
+
         if (!string.IsNullOrEmpty(loggedEmail))
         {
-            if (Current?.Windows.Count > 0)
-                Current.Windows[0].Page = new AppShell();
-            else
-                MainPage = new AppShell();
+            rootPage = new AppShell();
 
             Task.Run(async () =>
             {
@@ -27,21 +25,18 @@ public partial class App : Application
         }
         else
         {
-            var loginPage = new NavigationPage(new LoginPage());
-            if (Current?.Windows.Count > 0)
-                Current.Windows[0].Page = loginPage;
-            else
-                MainPage = loginPage;
+            rootPage = new NavigationPage(new LoginPage());
         }
+
+        return new Window(rootPage);
     }
 
     public static RestService RestService
     {
         get
         {
-            if (restService == null)
-                restService = new RestService();
-            return restService;
+            field ??= new RestService();
+            return field;
         }
     }
 
@@ -49,9 +44,8 @@ public partial class App : Application
     {
         get
         {
-            if (notificationService == null)
-                notificationService = new NotificationClientService();
-            return notificationService;
+            field ??= new NotificationClientService();
+            return field;
         }
     }
 }

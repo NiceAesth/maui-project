@@ -4,7 +4,7 @@
         <TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
         <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
 
-        <RuntimeIdentifier Condition="$([MSBuild]::IsOSPlatform('osx')) and '$(TargetFramework)' == 'net9.0-maccatalyst18.0'">maccatalyst-arm64</RuntimeIdentifier>
+        <RuntimeIdentifier Condition="$([MSBuild]::IsOSPlatform('osx')) and '$(TargetFramework)' == 'net10.0-maccatalyst'">maccatalyst-arm64</RuntimeIdentifier>
 
         <OutputType>Exe</OutputType>
         <RootNamespace>ApartmentManager.Maui</RootNamespace>
