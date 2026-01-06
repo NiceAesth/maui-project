@@ -10,89 +10,29 @@
     <projectFile profileName="https">ApartmentManager.API/ApartmentManager.API.csproj</projectFile>
     <projectFile kind="Uwp">ApartmentManager.Maui/ApartmentManager.Maui.csproj</projectFile>
     <projectFile kind="XamarinAndroid">ApartmentManager.Maui/ApartmentManager.Maui.csproj</projectFile>
+    <projectFile kind="XamarinIOS">ApartmentManager.Maui/ApartmentManager.Maui.csproj</projectFile>
     <projectFile profileName="Windows Machine">ApartmentManager.Maui/ApartmentManager.Maui.csproj</projectFile>
     <projectFile profileName="http">ApartmentManager.Web/ApartmentManager.Web.csproj</projectFile>
     <projectFile profileName="https">ApartmentManager.Web/ApartmentManager.Web.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b091f05e-3ccd-4629-a09c-55ed0f79d192" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AboutPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AboutPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartamentEntryPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartamentEntryPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartamentPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartamentPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppShell.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppShell.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Converters/StatusColorConverter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/AsociatieDatabase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Database.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/IRestService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FacturaEntryPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FacturaEntryPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FacturaPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FacturaPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocatarEntryPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocatarEntryPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocatarPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocatarPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogoutPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogoutPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MauiProgram.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Apartament.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/CheltuialaAsociatie.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/FacturaIndividuala.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Locatar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Sesizare.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROIECT.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROIECT.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/Android/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/Android/MainActivity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/Android/MainApplication.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/Android/Resources/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/MacCatalyst/AppDelegate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/MacCatalyst/Entitlements.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/MacCatalyst/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/MacCatalyst/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/Tizen/Main.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/Tizen/tizen-manifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/Windows/App.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/Windows/App.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/Windows/Package.appxmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/Windows/app.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/iOS/AppDelegate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/iOS/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/iOS/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platforms/iOS/Resources/PrivacyInfo.xcprivacy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegisterPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegisterPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/AppIcon/appicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/AppIcon/appiconfg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Fonts/OpenSans-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Fonts/OpenSans-Semibold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Images/apartament_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Images/factura_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Images/info_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Images/sesizare_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Raw/AboutAssets.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Splash/splash.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Styles/Colors.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Styles/Styles.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/RestService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SesizareEntryPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SesizareEntryPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SesizariPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SesizariPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ValidationBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/ApartmentManager.Maui.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/ApartmentManager.Maui.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/AppShell.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/AppShell.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Android/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Tizen/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Tizen/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Tizen/tizen-manifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Tizen/tizen-manifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Windows/app.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Windows/app.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/iOS/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/iOS/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/iOS/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/Platforms/iOS/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,15 +54,15 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/NiceAesth/maui-project.git&quot;,
-    &quot;accountId&quot;: &quot;24201968-aae7-41f5-a14b-93c4914de3d5&quot;
+    &quot;accountId&quot;: &quot;2904db29-1b98-40ef-939c-a2296eec7d81&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/.nuget/packages/microsoft.windowsappsdk/1.7.250909003/include/DeploymentManagerAutoInitializer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/.nuget/packages/microsoft.windowsappsdk/1.7.250909003/include/WindowsAppSDK-VersionInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/445c0a662f0666fccf5eb57dd8dfaa3a44a31df661c577d3fc12fdb0c556/DatePicker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../BaciuAndreiLab7/BaciuAndreiLab7/ProductPage.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Android/MainApplication.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/obj/Debug/net10.0-android/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/MacCatalyst/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/Tizen/Main.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApartmentManager.Maui/Platforms/iOS/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -148,13 +88,22 @@
     ".NET Launch Settings Profile.ApartmentManager.Web: http.executor": "Debug",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Android.ApartmentManager.Maui.executor": "Run",
+    "Device#class com.jetbrains.rider.run.multiPlatform.ios.devices.IOSConnectedDeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider#iOS: ApartmentManager.Maui": "Baciu Andrei’s iPhone",
+    "DeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider": "Device",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "do_not_show_solution_notification": "true",
     "git-widget-placeholder": "master",
+    "iOS.ApartmentManager.Maui.executor": "Run",
     "ignore.virus.scanning.warn.message": "true",
+    "macOS.ApartmentManager.Maui.executor": "Run",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
@@ -165,7 +114,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Android.ApartmentManager.Maui">
+  <component name="RunManager" selected="macOS.ApartmentManager.Maui">
     <configuration name="ApartmentManager.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ApartmentManager.API/ApartmentManager.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net10.0" />
@@ -262,6 +211,34 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="ApartmentManager.Maui" type="XamarinIOSProject" factoryName="Xamarin.iOS">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ApartmentManager.Maui/ApartmentManager.Maui.csproj" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="IS_PASS_PARENT_ENVS" value="false" />
+      <option name="EXTRA_MLAUNCH_PARAMETERS" value="" />
+      <option name="PLATFORM_TYPE" value="IOS" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ApartmentManager.Maui" type="XamarinMacProject" factoryName="Xamarin.Mac">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ApartmentManager.Maui/ApartmentManager.Maui.csproj" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ApartmentManager.Maui/bin/Debug/net10.0-maccatalyst/maccatalyst-arm64" />
+      <option name="PASS_PARENT_ENVS_MAC" value="1" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.ApartmentManager.API: http" />
+      <item itemvalue=".NET Launch Settings Profile.ApartmentManager.API: https" />
+      <item itemvalue=".NET Launch Settings Profile.ApartmentManager.Maui: Windows Machine" />
+      <item itemvalue=".NET Launch Settings Profile.ApartmentManager.Web: http" />
+      <item itemvalue=".NET Launch Settings Profile.ApartmentManager.Web: https" />
+      <item itemvalue="Android.ApartmentManager.Maui" />
+      <item itemvalue="iOS.ApartmentManager.Maui" />
+      <item itemvalue="macOS.ApartmentManager.Maui" />
+      <item itemvalue="UWP.ApartmentManager.Maui" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -277,6 +254,8 @@
       <workItem from="1767663694515" duration="6299000" />
       <workItem from="1767670582637" duration="34000" />
       <workItem from="1767671440211" duration="1255000" />
+      <workItem from="1767673012984" duration="423000" />
+      <workItem from="1767673458427" duration="1201000" />
     </task>
     <servers />
   </component>

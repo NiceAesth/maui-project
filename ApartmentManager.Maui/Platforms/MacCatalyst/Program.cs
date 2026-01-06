@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace PROIECT
+namespace ApartmentManager.Maui
 {
     public class Program
     {
