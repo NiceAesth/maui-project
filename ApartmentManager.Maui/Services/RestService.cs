@@ -10,7 +10,7 @@ public class RestService : IRestService
 {
     private readonly HttpClient _client;
     private readonly JsonSerializerOptions _serializerOptions;
-    private readonly string BaseUrl;
+    private readonly string _baseUrl;
 
     public RestService()
     {
@@ -25,14 +25,14 @@ public class RestService : IRestService
             WriteIndented = true
         };
 
-        BaseUrl = DeviceInfo.Platform == DevicePlatform.Android ?
+        _baseUrl = DeviceInfo.Platform == DevicePlatform.Android ?
             "http://10.0.2.2:5191/api/" :
             "http://localhost:5191/api/";
     }
 
     public async Task<string> LoginAsync(LoginModel model)
     {
-        var uri = new Uri(BaseUrl + "auth/login");
+        var uri = new Uri(_baseUrl + "auth/login");
         try
         {
             var json = JsonSerializer.Serialize(model, _serializerOptions);
@@ -93,7 +93,7 @@ public class RestService : IRestService
 
     public async Task<bool> RegisterAsync(RegisterModel model)
     {
-        var uri = new Uri(BaseUrl + "auth/register");
+        var uri = new Uri(_baseUrl + "auth/register");
         try
         {
             var json = JsonSerializer.Serialize(model, _serializerOptions);
@@ -114,7 +114,7 @@ public class RestService : IRestService
     {
         await SetTokenAsync();
         var items = new List<Apartament>();
-        var uri = new Uri(BaseUrl + "apartamente");
+        var uri = new Uri(_baseUrl + "apartamente");
         try
         {
             var response = await _client.GetAsync(uri);
@@ -135,7 +135,7 @@ public class RestService : IRestService
     public async Task SaveApartamentAsync(Apartament item, bool isNewItem)
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "apartamente");
+        var uri = new Uri(_baseUrl + "apartamente");
         try
         {
             var json = JsonSerializer.Serialize(item, _serializerOptions);
@@ -144,7 +144,7 @@ public class RestService : IRestService
             if (isNewItem)
                 await _client.PostAsync(uri, content);
             else
-                await _client.PutAsync(new Uri(BaseUrl + "apartamente/" + item.ID), content);
+                await _client.PutAsync(new Uri(_baseUrl + "apartamente/" + item.ID), content);
         }
         catch (Exception ex)
         {
@@ -155,7 +155,7 @@ public class RestService : IRestService
     public async Task DeleteApartamentAsync(int id)
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "apartamente/" + id);
+        var uri = new Uri(_baseUrl + "apartamente/" + id);
         try
         {
             await _client.DeleteAsync(uri);
@@ -169,7 +169,7 @@ public class RestService : IRestService
     public async Task<List<FacturaIndividuala>> GetAllFacturiAsync()
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "facturi");
+        var uri = new Uri(_baseUrl + "facturi");
         try
         {
             var response = await _client.GetAsync(uri);
@@ -197,7 +197,7 @@ public class RestService : IRestService
     public async Task<List<Sesizare>> RefreshSesizariAsync()
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "sesizari");
+        var uri = new Uri(_baseUrl + "sesizari");
         var items = new List<Sesizare>();
         try
         {
@@ -219,7 +219,7 @@ public class RestService : IRestService
     public async Task SaveSesizareAsync(Sesizare item, bool isNewItem)
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "sesizari");
+        var uri = new Uri(_baseUrl + "sesizari");
         try
         {
             var json = JsonSerializer.Serialize(item, _serializerOptions);
@@ -228,7 +228,7 @@ public class RestService : IRestService
             if (isNewItem)
                 await _client.PostAsync(uri, content);
             else
-                await _client.PutAsync(new Uri(BaseUrl + "sesizari/" + item.ID), content);
+                await _client.PutAsync(new Uri(_baseUrl + "sesizari/" + item.ID), content);
         }
         catch (Exception ex)
         {
@@ -239,7 +239,7 @@ public class RestService : IRestService
     public async Task SaveLocatarAsync(Locatar item, bool isNewItem)
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "locatari");
+        var uri = new Uri(_baseUrl + "locatari");
         try
         {
             var json = JsonSerializer.Serialize(item, _serializerOptions);
@@ -248,7 +248,7 @@ public class RestService : IRestService
             if (isNewItem)
                 await _client.PostAsync(uri, content);
             else
-                await _client.PutAsync(new Uri(BaseUrl + "locatari/" + item.ID), content);
+                await _client.PutAsync(new Uri(_baseUrl + "locatari/" + item.ID), content);
         }
         catch (Exception ex)
         {
@@ -259,7 +259,7 @@ public class RestService : IRestService
     public async Task DeleteLocatarAsync(string id)
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "locatari/" + id);
+        var uri = new Uri(_baseUrl + "locatari/" + id);
         try
         {
             await _client.DeleteAsync(uri);
@@ -273,7 +273,7 @@ public class RestService : IRestService
     public async Task<List<Locatar>> GetAllLocatariAsync()
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "locatari");
+        var uri = new Uri(_baseUrl + "locatari");
         try
         {
             var response = await _client.GetAsync(uri);
@@ -294,7 +294,7 @@ public class RestService : IRestService
     public async Task<Locatar?> GetLocatarAsync(string id)
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "locatari/" + id);
+        var uri = new Uri(_baseUrl + "locatari/" + id);
         try
         {
             var response = await _client.GetAsync(uri);
@@ -321,7 +321,7 @@ public class RestService : IRestService
     public async Task DeleteSesizareAsync(int id)
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "sesizari/" + id);
+        var uri = new Uri(_baseUrl + "sesizari/" + id);
         try
         {
             await _client.DeleteAsync(uri);
@@ -335,7 +335,7 @@ public class RestService : IRestService
     public async Task SaveFacturaAsync(FacturaIndividuala item, bool isNewItem)
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "facturi");
+        var uri = new Uri(_baseUrl + "facturi");
         try
         {
             var json = JsonSerializer.Serialize(item, _serializerOptions);
@@ -344,7 +344,7 @@ public class RestService : IRestService
             if (isNewItem)
                 await _client.PostAsync(uri, content);
             else
-                await _client.PutAsync(new Uri(BaseUrl + "facturi/" + item.ID), content);
+                await _client.PutAsync(new Uri(_baseUrl + "facturi/" + item.ID), content);
         }
         catch (Exception ex)
         {
@@ -355,7 +355,7 @@ public class RestService : IRestService
     public async Task DeleteFacturaAsync(int id)
     {
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "facturi/" + id);
+        var uri = new Uri(_baseUrl + "facturi/" + id);
         try
         {
             await _client.DeleteAsync(uri);
@@ -370,7 +370,7 @@ public class RestService : IRestService
     {
         var items = new List<Notification>();
         await SetTokenAsync();
-        var uri = new Uri(BaseUrl + "notifications");
+        var uri = new Uri(_baseUrl + "notifications");
         try
         {
             var response = await _client.GetAsync(uri);
