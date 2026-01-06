@@ -19,11 +19,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b091f05e-3ccd-4629-a09c-55ed0f79d192" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/ApartamentPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/ApartamentPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/SesizareEntryPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/SesizareEntryPage.xaml.cs" afterDir="false" />
-    </list>
+    <list default="true" id="b091f05e-3ccd-4629-a09c-55ed0f79d192" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,9 +97,10 @@
     &quot;.NET Launch Settings Profile.ApartmentManager.Web: http.executor&quot;: &quot;Run&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Android.ApartmentManager.Maui.executor&quot;: &quot;Run&quot;,
+    &quot;Device#class com.jetbrains.rider.run.multiPlatform.ios.devices.IOSConnectedDeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider#com.intellij.execution.compound.CompoundRunConfiguration@696744e8&quot;: &quot;Baciu Andrei’s iPhone&quot;,
     &quot;Device#class com.jetbrains.rider.run.multiPlatform.ios.devices.IOSConnectedDeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider#iOS: ApartmentManager.Maui&quot;: &quot;Baciu Andrei’s iPhone&quot;,
     &quot;Device#class com.jetbrains.rider.run.multiPlatform.ios.devices.IOSSimulatorKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider#iOS: ApartmentManager.Maui&quot;: &quot;iPhone 16e (iOS 26.2)&quot;,
-    &quot;DeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider&quot;: &quot;Simulator&quot;,
+    &quot;DeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider&quot;: &quot;Device&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -130,7 +127,22 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="iOS.ApartmentManager.Maui">
+  <component name="RunManager" selected="Compound.iOS (API + MAUI)">
+    <configuration name="Android (API + MAUI)" type="CompoundRunConfigurationType">
+      <toRun name="ApartmentManager.API: http" type="LaunchSettings" />
+      <toRun name="ApartmentManager.Maui" type="XamarinAndroidProject" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Web + API" type="CompoundRunConfigurationType">
+      <toRun name="ApartmentManager.API: http" type="LaunchSettings" />
+      <toRun name="ApartmentManager.Web: http" type="LaunchSettings" />
+      <method v="2" />
+    </configuration>
+    <configuration name="iOS (API + MAUI)" type="CompoundRunConfigurationType">
+      <toRun name="ApartmentManager.API: http" type="LaunchSettings" />
+      <toRun name="ApartmentManager.Maui" type="XamarinIOSProject" />
+      <method v="2" />
+    </configuration>
     <configuration name="ApartmentManager.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ApartmentManager.API/ApartmentManager.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net10.0" />
@@ -193,7 +205,6 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="ApartmentManager.API: http" run_configuration_type="LaunchSettings" />
       </method>
     </configuration>
     <configuration name="ApartmentManager.Web: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -210,7 +221,6 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="ApartmentManager.API: http" run_configuration_type="LaunchSettings" />
       </method>
     </configuration>
     <configuration name="ApartmentManager.Maui" type="UwpProject" factoryName="UWP">
@@ -237,7 +247,6 @@
       <option name="PLATFORM_TYPE" value="IOS" />
       <method v="2">
         <option name="Build" projectName="Selected project" />
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="ApartmentManager.API: http" run_configuration_type="LaunchSettings" />
       </method>
     </configuration>
     <configuration name="ApartmentManager.Maui" type="XamarinMacProject" factoryName="Xamarin.Mac">
@@ -247,7 +256,6 @@
       <option name="PASS_PARENT_ENVS_MAC" value="1" />
       <method v="2">
         <option name="Build" />
-        <option name="RunConfigurationTask" enabled="true" run_configuration_name="ApartmentManager.API: http" run_configuration_type="LaunchSettings" />
       </method>
     </configuration>
     <list>
@@ -257,6 +265,9 @@
       <item itemvalue=".NET Launch Settings Profile.ApartmentManager.Web: http" />
       <item itemvalue=".NET Launch Settings Profile.ApartmentManager.Web: https" />
       <item itemvalue="Android.ApartmentManager.Maui" />
+      <item itemvalue="Compound.Web + API" />
+      <item itemvalue="Compound.Android (API + MAUI)" />
+      <item itemvalue="Compound.iOS (API + MAUI)" />
       <item itemvalue="iOS.ApartmentManager.Maui" />
       <item itemvalue="macOS.ApartmentManager.Maui" />
       <item itemvalue="UWP.ApartmentManager.Maui" />
@@ -280,7 +291,7 @@
       <workItem from="1767673458427" duration="1988000" />
       <workItem from="1767675868431" duration="600000" />
       <workItem from="1767676733170" duration="3829000" />
-      <workItem from="1767680778259" duration="106000" />
+      <workItem from="1767680778259" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="fix: platform files">
       <option name="closed" value="true" />
@@ -322,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767680587056</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="chore: remove deprecated function calls">
+      <option name="closed" value="true" />
+      <created>1767680899605</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1767680899605</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +356,8 @@
     <MESSAGE value="chore: rename variable to match naming scheme" />
     <MESSAGE value="chore: update runtime configurations" />
     <MESSAGE value="feat: implement fontawesome icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implement fontawesome icons" />
+    <MESSAGE value="chore: remove deprecated function calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: remove deprecated function calls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
