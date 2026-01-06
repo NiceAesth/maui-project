@@ -18,7 +18,7 @@ public partial class ApartamentPage : ContentPage
 
 
         var esteAdmin = Preferences.Get("IsAdmin", false);
-        //await DisplayAlert("Debug", "Ești Admin: " + esteAdmin, "OK");
+        //await DisplayAlertAsync("Debug", "Ești Admin: " + esteAdmin, "OK");
 
         if (addApartamentBtn != null) addApartamentBtn.IsVisible = esteAdmin;
     }

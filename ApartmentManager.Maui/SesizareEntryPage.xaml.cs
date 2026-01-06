@@ -14,7 +14,7 @@ public partial class SesizareEntryPage : ContentPage
         if (string.IsNullOrWhiteSpace(subiectEntry.Text) ||
             string.IsNullOrWhiteSpace(descriereEditor.Text))
         {
-            await DisplayAlert("Eroare", "Te rugăm să completezi subiectul și descrierea!", "OK");
+            await DisplayAlertAsync("Eroare", "Te rugăm să completezi subiectul și descrierea!", "OK");
             return;
         }
 
@@ -30,7 +30,7 @@ public partial class SesizareEntryPage : ContentPage
 
         await App.RestService.SaveSesizareAsync(sesizareNoua, true);
 
-        await DisplayAlert("Mulțumim", "Sesizarea a fost trimisă!", "OK");
+        await DisplayAlertAsync("Mulțumim", "Sesizarea a fost trimisă!", "OK");
         await Navigation.PopAsync();
     }
 }

@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b091f05e-3ccd-4629-a09c-55ed0f79d192" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ApartmentManager.Shared/FontAwesome.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ApartmentManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/AppShell.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/AppShell.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/MauiProgram.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/MauiProgram.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/ApartamentPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/ApartamentPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApartmentManager.Maui/SesizareEntryPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApartmentManager.Maui/SesizareEntryPage.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,42 +94,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.ApartmentManager.API: http.executor": "Run",
-    ".NET Launch Settings Profile.ApartmentManager.Maui: Windows Machine.executor": "Run",
-    ".NET Launch Settings Profile.ApartmentManager.Web: http.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Android.ApartmentManager.Maui.executor": "Run",
-    "Device#class com.jetbrains.rider.run.multiPlatform.ios.devices.IOSConnectedDeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider#iOS: ApartmentManager.Maui": "Baciu Andrei’s iPhone",
-    "Device#class com.jetbrains.rider.run.multiPlatform.ios.devices.IOSSimulatorKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider#iOS: ApartmentManager.Maui": "iPhone 16e (iOS 26.2)",
-    "DeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider": "Simulator",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.android.tools.idea.streaming.zoom.toolbar.visible": "false",
-    "do_not_show_solution_notification": "true",
-    "git-widget-placeholder": "master",
-    "iOS.ApartmentManager.Maui.executor": "Run",
-    "ignore.virus.scanning.warn.message": "true",
-    "macOS.ApartmentManager.Maui.executor": "Run",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.ApartmentManager.API: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ApartmentManager.Maui: Windows Machine.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ApartmentManager.Web: http.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Android.ApartmentManager.Maui.executor&quot;: &quot;Run&quot;,
+    &quot;Device#class com.jetbrains.rider.run.multiPlatform.ios.devices.IOSConnectedDeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider#iOS: ApartmentManager.Maui&quot;: &quot;Baciu Andrei’s iPhone&quot;,
+    &quot;Device#class com.jetbrains.rider.run.multiPlatform.ios.devices.IOSSimulatorKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider#iOS: ApartmentManager.Maui&quot;: &quot;iPhone 16e (iOS 26.2)&quot;,
+    &quot;DeviceKind#com.jetbrains.rider.run.multiPlatform.ios.devices.IOSDevicesProvider&quot;: &quot;Simulator&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.android.tools.idea.streaming.zoom.toolbar.visible&quot;: &quot;false&quot;,
+    &quot;do_not_show_solution_notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;iOS.ApartmentManager.Maui.executor&quot;: &quot;Run&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;macOS.ApartmentManager.Maui.executor&quot;: &quot;Run&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="iOS.ApartmentManager.Maui">
     <configuration name="ApartmentManager.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ApartmentManager.API/ApartmentManager.API.csproj" />
@@ -280,7 +279,8 @@
       <workItem from="1767673012984" duration="423000" />
       <workItem from="1767673458427" duration="1988000" />
       <workItem from="1767675868431" duration="600000" />
-      <workItem from="1767676733170" duration="3657000" />
+      <workItem from="1767676733170" duration="3829000" />
+      <workItem from="1767680778259" duration="106000" />
     </task>
     <task id="LOCAL-00001" summary="fix: platform files">
       <option name="closed" value="true" />
@@ -314,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767680123997</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: implement fontawesome icons">
+      <option name="closed" value="true" />
+      <created>1767680587056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1767680587056</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +336,8 @@
     <MESSAGE value="chore: update plists" />
     <MESSAGE value="chore: rename variable to match naming scheme" />
     <MESSAGE value="chore: update runtime configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: update runtime configurations" />
+    <MESSAGE value="feat: implement fontawesome icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implement fontawesome icons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
