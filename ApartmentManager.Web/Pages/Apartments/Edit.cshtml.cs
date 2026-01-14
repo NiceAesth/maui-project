@@ -31,6 +31,8 @@ public class EditModel : PageModel
         Apartament =
             JsonSerializer.Deserialize<Apartament>(content,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new Apartament();
+        
+        Apartament.Suprafata = Math.Round(Apartament.Suprafata, 2);
 
         return Page();
     }

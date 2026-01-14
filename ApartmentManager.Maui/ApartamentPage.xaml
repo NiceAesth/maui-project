@@ -14,8 +14,11 @@
                 <DataTemplate>
                     <Grid Padding="10">
                         <VerticalStackLayout>
-                            <Label Text="{Binding NumarApartament}" FontAttributes="Bold" FontSize="16" />
-                            <Label Text="{Binding DetaliiApartament}" FontSize="12" TextColor="Gray" />
+                            <Label Text="{Binding DetaliiApartament}" FontAttributes="Bold" FontSize="16" />
+                            <Label
+                                Text="{Binding Suprafata, StringFormat='{0:F2} mp'}"
+                                FontSize="12"
+                                TextColor="Gray" />
                         </VerticalStackLayout>
                     </Grid>
                 </DataTemplate>

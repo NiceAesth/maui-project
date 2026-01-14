@@ -15,7 +15,7 @@
             <Entry Placeholder="Ex: 2" Text="{Binding Etaj}" Keyboard="Numeric" />
 
             <Label Text="Suprafață (mp):" FontAttributes="Bold" />
-            <Entry Placeholder="Ex: 55" Text="{Binding Suprafata}" Keyboard="Numeric" />
+            <Entry Placeholder="Ex: 55" Text="{Binding Suprafata, StringFormat='{0:F2}'}" Keyboard="Numeric" />
 
             <Button x:Name="saveBtn"
                     Text="Salvează Apartament"

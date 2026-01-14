@@ -25,7 +25,7 @@
         <tr>
             <td>@item.NumarApartament</td>
             <td>@item.Etaj</td>
-            <td>@item.Suprafata mp</td>
+            <td>@item.Suprafata.ToString("F2") mp</td>
             <td>@item.NumarPersoane</td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Editare</a> |
